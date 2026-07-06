@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+(function () {
+  var stored = localStorage.getItem('theme');
+  var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  if (theme === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+})();
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Team — Ambex Consults</title>
+<meta name="description" content="Meet the HSEQ consultants, environmental scientists, and trainers behind Ambex Consults.">
+<meta property="og:title" content="Team — Ambex Consults">
+<meta property="og:description" content="The people behind Ambex Consults' HSEQ practice.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="/assets/images/hero/safety.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Team — Ambex Consults">
+<meta name="twitter:description" content="The people behind Ambex Consults' HSEQ practice.">
+<meta name="twitter:image" content="/assets/images/hero/safety.webp">
+<meta name="theme-color" content="#0E8A60">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<link rel="canonical" href="https://ambexconsults.com/people">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css?v=1">
+</head>
+<body data-page="people">
+<div id="page-shell">
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<header class="site-header is-scrolled" id="site-header">
+  <div class="container header-inner">
+    <a href="/" class="brand" aria-label="Ambex Consults home">
+      <img src="/logo.svg" alt="" class="brand-mark" width="36" height="36">
+      <span class="brand-name">Ambex<span class="brand-name-sub">Consults</span></span>
+    </a>
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/work">Projects</a></li>
+        <li><a href="/people" aria-current="page">Team</a></li>
+        <li><a href="/insights">Insights</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <a href="/contact" class="btn btn-accent nav-cta">Talk to Us</a>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5 5l1.5 1.5M17.5 17.5 19 19M5 19l1.5-1.5M17.5 6.5 19 5"/></svg>
+      </button>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main-content">
+  <section class="section" id="people" aria-label="Our team">
+    <!-- PLACEHOLDER ROSTER: replace names, roles, bios, and photos with the
+         real Ambex team before launch. See assets/images/people/PUT_IMAGES_HERE.md. -->
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow" data-reveal>Our Team</p>
+        <h2 class="display-heading" data-reveal>The people behind the practice.</h2>
+        <p class="lead" data-reveal>Registered safety practitioners, environmental scientists, and trainers who spend as much time on sites as they do on reports.</p>
+      </div>
+      <div class="people-grid">
+        <div class="person-card" data-reveal>
+          <div class="person-media"><div class="media-frame"><img class="js-img" data-path="/assets/images/people/placeholder-1.jpg" src="/assets/images/people/placeholder-1.jpg" alt="Add Name" loading="lazy"></div></div>
+          <div class="person-body">
+            <div class="person-name">Add Name</div>
+            <div class="person-role">Managing Director</div>
+            <p class="person-bio">Add a 1–2 sentence bio — background, credentials, and what they lead on.</p>
+          </div>
+        </div>
+        <div class="person-card" data-reveal>
+          <div class="person-media"><div class="media-frame"><img class="js-img" data-path="/assets/images/people/placeholder-2.jpg" src="/assets/images/people/placeholder-2.jpg" alt="Add Name" loading="lazy"></div></div>
+          <div class="person-body">
+            <div class="person-name">Add Name</div>
+            <div class="person-role">Lead HSE Consultant</div>
+            <p class="person-bio">Add a 1–2 sentence bio — background, credentials, and what they lead on.</p>
+          </div>
+        </div>
+        <div class="person-card" data-reveal>
+          <div class="person-media"><div class="media-frame"><img class="js-img" data-path="/assets/images/people/placeholder-3.jpg" src="/assets/images/people/placeholder-3.jpg" alt="Add Name" loading="lazy"></div></div>
+          <div class="person-body">
+            <div class="person-name">Add Name</div>
+            <div class="person-role">Environmental Scientist</div>
+            <p class="person-bio">Add a 1–2 sentence bio — background, credentials, and what they lead on.</p>
+          </div>
+        </div>
+        <div class="person-card" data-reveal>
+          <div class="person-media"><div class="media-frame"><img class="js-img" data-path="/assets/images/people/placeholder-4.jpg" src="/assets/images/people/placeholder-4.jpg" alt="Add Name" loading="lazy"></div></div>
+          <div class="person-body">
+            <div class="person-name">Add Name</div>
+            <div class="person-role">Air Quality Analyst</div>
+            <p class="person-bio">Add a 1–2 sentence bio — background, credentials, and what they lead on.</p>
+          </div>
+        </div>
+        <div class="person-card" data-reveal>
+          <div class="person-media"><div class="media-frame"><img class="js-img" data-path="/assets/images/people/placeholder-5.jpg" src="/assets/images/people/placeholder-5.jpg" alt="Add Name" loading="lazy"></div></div>
+          <div class="person-body">
+            <div class="person-name">Add Name</div>
+            <div class="person-role">Training &amp; Capacity Lead</div>
+            <p class="person-bio">Add a 1–2 sentence bio — background, credentials, and what they lead on.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">
+          <img src="/logo.svg" alt="" width="34" height="34">
+          <span>Ambex Consults</span>
+        </div>
+        <p class="footer-note">Ambex Consults — your trusted HSE partner for health, safety, environment, and air quality across East Africa.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/work">Projects</a></li>
+            <li><a href="/people">Team</a></li>
+            <li><a href="/insights">Insights</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:info@ambexconsults.com">info@ambexconsults.com</a></li>
+            <li>+256 787 191 860</li>
+            <li>North Park Plaza, Namugongo Mbalwa,<br>Bypass Link, Kampala</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="footer-year">2026</span> Ambex Consults (U) Ltd. All rights reserved.</span>
+      <span>Kampala, Uganda — serving East Africa</span>
+    </div>
+  </div>
+</footer>
+</div>
+<div class="mobile-nav-drawer" id="mobile-nav-drawer">
+  <a href="/" class="mobile-nav-brand" aria-label="Ambex Consults home">
+    <img src="/logo.svg" alt="" class="brand-mark">
+    <span class="brand-name">Ambex<small class="brand-name-sub">Consults</small></span>
+  </a>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/work">Projects</a></li>
+    <li><a href="/people" aria-current="page">Team</a></li>
+    <li><a href="/insights">Insights</a></li>
+    <li><a href="/contact">Contact</a></li>
+  </ul>
+  <button type="button" class="mobile-nav-close" aria-label="Close menu">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6 6 18"/></svg>
+  </button>
+</div>
+
+<noscript>
+  <div style="padding:2rem;font-family:sans-serif;max-width:640px;margin:0 auto;">
+    This page works without JavaScript. Enabling it adds dark mode, the mobile menu, and a few animations — or contact
+    info@ambexconsults.com directly.
+  </div>
+</noscript>
+
+<script src="/js/main.js?v=1" defer></script>
+</body>
+</html>

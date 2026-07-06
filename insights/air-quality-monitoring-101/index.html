@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+(function () {
+  var stored = localStorage.getItem('theme');
+  var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  if (theme === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+})();
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Air quality monitoring 101: what to measure and why — Ambex Consults</title>
+<meta name="description" content="PM2.5, PM10, SO₂, NOx — a plain-language guide to the parameters that matter, and how to choose a monitoring programme that regulators will accept.">
+<meta property="og:title" content="Air quality monitoring 101: what to measure and why — Ambex Consults">
+<meta property="og:description" content="PM2.5, PM10, SO₂, NOx — a plain-language guide to the parameters that matter, and how to choose a monitoring programme that regulators will accept.">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Air quality monitoring 101: what to measure and why — Ambex Consults">
+<meta name="twitter:description" content="PM2.5, PM10, SO₂, NOx — a plain-language guide to the parameters that matter, and how to choose a monitoring programme that regulators will accept.">
+<meta name="theme-color" content="#0E8A60">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<link rel="canonical" href="https://ambexconsults.com/insights/air-quality-monitoring-101/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css?v=1">
+</head>
+<body data-page="insights">
+<div id="page-shell">
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<header class="site-header is-scrolled" id="site-header">
+  <div class="container header-inner">
+    <a href="/" class="brand" aria-label="Ambex Consults home">
+      <img src="/logo.svg" alt="" class="brand-mark" width="36" height="36">
+      <span class="brand-name">Ambex<span class="brand-name-sub">Consults</span></span>
+    </a>
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/work">Projects</a></li>
+        <li><a href="/people">Team</a></li>
+        <li><a href="/insights" aria-current="page">Insights</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <a href="/contact" class="btn btn-accent nav-cta">Talk to Us</a>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5 5l1.5 1.5M17.5 17.5 19 19M5 19l1.5-1.5M17.5 6.5 19 5"/></svg>
+      </button>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main-content">
+  <article class="section" aria-label="Air quality monitoring 101: what to measure and why">
+    <div class="container">
+      <header class="article-header">
+        <span class="news-tag">Air Quality</span>
+        <h1>Air quality monitoring 101: what to measure and why</h1>
+        <p class="article-meta">By Ambex Consults · <time datetime="2026-04-02">April 2, 2026</time></p>
+      </header>
+      <div class="article-hero"><div class="media-frame"><img class="js-img" data-path="/assets/images/insights/air-monitoring-101.jpg" src="/assets/images/insights/air-monitoring-101.jpg" alt="" loading="eager"></div></div>
+      <div class="article-body">
+<p>Air quality is the least visible risk on most sites — you can see an unguarded machine, but you cannot see respirable dust. This guide covers the parameters we measure most often and what each one tells you.</p>
+<h3>The parameters that matter</h3>
+<ul><li><strong>PM2.5 and PM10</strong> — particulate matter small enough to reach deep into the lungs. The workhorse indicators for construction dust, quarrying, cement, and traffic corridors.</li><li><strong>SO₂ and NOx</strong> — combustion gases from boilers, kilns, generators, and heavy vehicles. Key for any site burning fuel at scale.</li><li><strong>VOCs</strong> — volatile organic compounds from solvents, paints, and fuel handling. Often the dominant indoor exposure in workshops.</li><li><strong>CO and CO₂</strong> — the first tells you about incomplete combustion and acute risk; the second is a fast proxy for poor ventilation indoors.</li><li><strong>Noise</strong> — not strictly air quality, but usually monitored on the same programme because the receptors and reporting cycles overlap.</li></ul>
+<h3>Baseline first, always</h3>
+<p>If a project is new, measure <em>before</em> it starts. A baseline study is the only defensible way to separate your impact from what was already in the air — and the one thing you cannot reconstruct later. Twelve months of seasonal coverage is the gold standard; a shorter campaign can work if it captures both wet and dry seasons.</p>
+<h3>What makes data defensible</h3>
+<ol><li>Calibrated instruments with traceable certificates.</li><li>Receptor locations chosen for exposure, not convenience — the school downwind matters more than the fence line upwind.</li><li>Sampling durations matched to the standard you're comparing against (24-hour averages compared to 24-hour limits, not spot readings).</li><li>A chain of custody from field sheet to final report.</li></ol>
+<p>Cutting any of these corners produces numbers, not evidence. When a regulator or an international auditor questions the data, only evidence survives.</p>
+<h3>Reading the results</h3>
+<p>Comparing results against Uganda's national standards and WHO guideline values side by side is good practice: the national standard tells you about compliance, the WHO value tells you about health. When the two disagree, the gap is your improvement roadmap.</p>
+<p>Planning a monitoring programme? <a href="/contact">Get in touch</a> and we'll help you scope receptors, parameters, and frequency before you commit to a budget.</p>
+      </div>
+      <footer class="article-footer">
+        <a class="btn btn-outline-dark" href="/insights">&larr; All Insights</a>
+      </footer>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer" id="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">
+          <img src="/logo.svg" alt="" width="34" height="34">
+          <span>Ambex Consults</span>
+        </div>
+        <p class="footer-note">Ambex Consults — your trusted HSE partner for health, safety, environment, and air quality across East Africa.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/work">Projects</a></li>
+            <li><a href="/people">Team</a></li>
+            <li><a href="/insights">Insights</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:info@ambexconsults.com">info@ambexconsults.com</a></li>
+            <li>+256 787 191 860</li>
+            <li>North Park Plaza, Namugongo Mbalwa,<br>Bypass Link, Kampala</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="footer-year">2026</span> Ambex Consults (U) Ltd. All rights reserved.</span>
+      <span>Kampala, Uganda — serving East Africa</span>
+    </div>
+  </div>
+</footer>
+</div>
+<div class="mobile-nav-drawer" id="mobile-nav-drawer">
+  <a href="/" class="mobile-nav-brand" aria-label="Ambex Consults home">
+    <img src="/logo.svg" alt="" class="brand-mark">
+    <span class="brand-name">Ambex<small class="brand-name-sub">Consults</small></span>
+  </a>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/work">Projects</a></li>
+    <li><a href="/people">Team</a></li>
+    <li><a href="/insights" aria-current="page">Insights</a></li>
+    <li><a href="/contact">Contact</a></li>
+  </ul>
+  <button type="button" class="mobile-nav-close" aria-label="Close menu">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6 6 18"/></svg>
+  </button>
+</div>
+
+<noscript>
+  <div style="padding:2rem;font-family:sans-serif;max-width:640px;margin:0 auto;">
+    This page works without JavaScript. Enabling it adds dark mode, the mobile menu, and a few animations — or contact
+    info@ambexconsults.com directly.
+  </div>
+</noscript>
+
+<script src="/js/main.js?v=1" defer></script>
+</body>
+</html>

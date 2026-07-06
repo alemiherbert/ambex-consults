@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+(function () {
+  var stored = localStorage.getItem('theme');
+  var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  if (theme === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+})();
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ambex Consults — Health, Safety, Environment &amp; Air Quality</title>
+<meta name="description" content="Ambex Consults is a Ugandan HSEQ consultancy helping organisations protect their people, meet environmental compliance standards, and measure the air their teams breathe.">
+<meta property="og:title" content="Ambex Consults — Health, Safety, Environment &amp; Air Quality">
+<meta property="og:description" content="Your trusted HSE partner — safety systems, environmental compliance, and air quality monitoring across East Africa.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="/assets/images/hero/safety.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ambex Consults — Health, Safety, Environment &amp; Air Quality">
+<meta name="twitter:description" content="Your trusted HSE partner — safety systems, environmental compliance, and air quality monitoring across East Africa.">
+<meta name="twitter:image" content="/assets/images/hero/safety.webp">
+<meta name="theme-color" content="#0E8A60">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<!-- Update the canonical URL once the final domain / GitHub Pages URL is known. -->
+<link rel="canonical" href="https://ambexconsults.com/">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"Ambex Consults","description":"Ambex Consults is a Ugandan HSEQ consultancy delivering occupational health and safety, environmental compliance, air quality monitoring, and HSEQ training services.","email":"info@ambexconsults.com","telephone":"+256 787 191 860","address":{"@type":"PostalAddress","streetAddress":"North Park Plaza, Namugongo Mbalwa, Bypass Link","addressLocality":"Kampala","addressCountry":"UG"},"url":"https://ambexconsults.com"}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css?v=1">
+</head>
+<body data-page="home">
+<div id="page-shell">
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
+    <a href="/" class="brand" aria-label="Ambex Consults home">
+      <img src="/logo.svg" alt="" class="brand-mark" width="36" height="36">
+      <span class="brand-name">Ambex<span class="brand-name-sub">Consults</span></span>
+    </a>
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="/" aria-current="page">Home</a></li>
+        <li><a href="/work">Projects</a></li>
+        <li><a href="/people">Team</a></li>
+        <li><a href="/insights">Insights</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <a href="/contact" class="btn btn-accent nav-cta">Talk to Us</a>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5 5l1.5 1.5M17.5 17.5 19 19M5 19l1.5-1.5M17.5 6.5 19 5"/></svg>
+      </button>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main-content">
+  <section class="hero" id="hero" aria-label="Introduction">
+    <div class="hero-media" id="hero-media">
+      <div class="hero-slide is-active"
+           data-headline="Your Trusted HSE Partner."
+           data-subheadline="Expert consulting that protects your people, ensures compliance, and drives operational excellence."
+           data-href="#services">
+        <div class="media-frame"><img class="js-img" data-path="/assets/images/hero/partner.webp" src="/assets/images/hero/partner.webp" alt="Consultants and site team reviewing plans together" loading="eager"></div>
+      </div>
+      <div class="hero-slide"
+           data-headline="Building Safety Cultures That Last."
+           data-subheadline="Protecting your workforce with compliance-driven systems and proactive risk management programmes."
+           data-href="#service-safety">
+        <div class="media-frame"><img class="js-img" data-path="/assets/images/hero/safety.webp" src="/assets/images/hero/safety.webp" alt="Workers in protective equipment on an industrial site" loading="eager"></div>
+      </div>
+      <div class="hero-slide"
+           data-headline="Environmental Management That Works."
+           data-subheadline="From impact assessments to ISO certification — comprehensive solutions for responsible operations."
+           data-href="#service-environment">
+        <div class="media-frame"><img class="js-img" data-path="/assets/images/hero/environment.webp" src="/assets/images/hero/environment.webp" alt="Green landscape beside an industrial facility" loading="eager"></div>
+      </div>
+    </div>
+    <div class="container hero-bottom">
+      <div class="hero-text">
+        <h1 id="hero-headline">Your Trusted HSE Partner.</h1>
+        <a class="lead" id="hero-subheadline" href="#services">Expert consulting that protects your people, ensures compliance, and drives operational excellence.</a>
+      </div>
+      <div class="hero-carousel" id="hero-carousel">
+        <div class="carousel-dots" id="carousel-dots">
+          <button type="button" class="carousel-dot is-active" data-index="0" aria-label="Show Your Trusted HSE Partner."></button>
+          <button type="button" class="carousel-dot" data-index="1" aria-label="Show Building Safety Cultures That Last."></button>
+          <button type="button" class="carousel-dot" data-index="2" aria-label="Show Environmental Management That Works."></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats-bar" id="stats-bar" aria-label="Key facts">
+    <!-- VERIFY FIGURES: update these numbers with Ambex's real track record
+         before launch. -->
+    <div class="container stats-grid">
+      <div data-reveal>
+        <div class="stat-value">120+</div>
+        <div class="stat-label">Audits &amp; Assessments Delivered</div>
+      </div>
+      <div data-reveal>
+        <div class="stat-value">2,500+</div>
+        <div class="stat-label">Workers Trained</div>
+      </div>
+      <div data-reveal>
+        <div class="stat-value">8</div>
+        <div class="stat-label">Sectors Served</div>
+      </div>
+      <div data-reveal>
+        <div class="stat-value">100%</div>
+        <div class="stat-label">Ugandan-Owned &amp; Led</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about" aria-label="About Ambex Consults">
+    <div class="container">
+      <div class="about-copy">
+        <p class="eyebrow" data-reveal>Who We Are</p>
+        <h2 class="display-heading" data-reveal>Tailored HSE, not templates.</h2>
+        <p class="lead" data-reveal>At Ambex Consults (U) Ltd, we help businesses across the continent operate responsibly, meet rigorous compliance standards, and create lasting positive impact.</p>
+        <p class="body" data-reveal>We don't believe in one-size-fits-all solutions. Every organisation faces unique HSE challenges, which is why we design tailored strategies that actually work for your operations, risks, and goals. Our team combines deep technical expertise with real-world experience across oil and gas, construction, manufacturing, logistics, and development sectors.</p>
+      </div>
+      <!-- The 3 Cs — Ambex's core values, one logo color each. -->
+      <div class="values-grid">
+        <div class="value-card" data-reveal>
+          <div class="value-letter" aria-hidden="true">C</div>
+          <div class="value-title">Care</div>
+          <p class="value-desc">Our solutions prioritize human well-being and environmental stewardship because doing right matters as much as doing well.</p>
+        </div>
+        <div class="value-card value-card--blue" data-reveal>
+          <div class="value-letter" aria-hidden="true">C</div>
+          <div class="value-title">Compliance</div>
+          <p class="value-desc">From ISO 9001, 14001, and 45001 to national and regional regulations, we ensure you meet — and exceed — every standard that applies to your operations.</p>
+        </div>
+        <div class="value-card value-card--brown" data-reveal>
+          <div class="value-letter" aria-hidden="true">C</div>
+          <div class="value-title">Confidence</div>
+          <p class="value-desc">When your HSE systems are managed by proven professionals, your teams can focus on what they do best. We give you the confidence to operate safely and successfully.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="services" aria-label="Our services">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow" data-reveal>What We Do</p>
+        <h2 class="display-heading" data-reveal>One accountable partner for HSE.</h2>
+        <p class="lead" data-reveal>Health, safety, environment, and air quality are not separate problems on a real site — they share causes, controls, and consequences. We cover the full spectrum to one standard.</p>
+      </div>
+      <div class="pillars-grid">
+        <div class="pillar-card" id="service-safety" data-reveal>
+          <div class="pillar-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 20 5v6c0 5-3.5 9-8 11-4.5-2-8-6-8-11V5l8-3Z"/><path d="m8.5 12 2.5 2.5L16 9.5"/></svg></div>
+          <h3 class="pillar-name">Occupational Health &amp; Safety</h3>
+          <p class="pillar-summary">Strong safety cultures are built through smart systems, proactive management, and continuous commitment.</p>
+          <ul class="pillar-capabilities">
+            <li>OHS audits &amp; statutory compliance</li>
+            <li>Risk assessments &amp; job safety analysis</li>
+            <li>Incident investigation &amp; reporting</li>
+            <li>Workplace inspections &amp; registers</li>
+          </ul>
+        </div>
+        <div class="pillar-card" id="service-environment" data-reveal>
+          <div class="pillar-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/></svg></div>
+          <h3 class="pillar-name">Environmental Management</h3>
+          <p class="pillar-summary">Minimize your ecological footprint while maximizing sustainability performance — compliant and future-ready.</p>
+          <ul class="pillar-capabilities">
+            <li>Environmental &amp; social impact assessments</li>
+            <li>Environmental audits &amp; compliance</li>
+            <li>Waste management &amp; restoration plans</li>
+            <li>NEMA approvals &amp; permitting</li>
+          </ul>
+        </div>
+        <div class="pillar-card" id="service-air" data-reveal>
+          <div class="pillar-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 8h11a3 3 0 1 0-3-3"/><path d="M3 12h15a3 3 0 1 1-3 3"/><path d="M3 16h7a3 3 0 1 1-3 3"/></svg></div>
+          <h3 class="pillar-name">Air Quality &amp; Monitoring</h3>
+          <p class="pillar-summary">Measurement programmes that turn invisible exposure into data you can act on and report with confidence.</p>
+          <ul class="pillar-capabilities">
+            <li>Ambient &amp; indoor air quality monitoring</li>
+            <li>Stack emissions &amp; dust monitoring</li>
+            <li>Noise &amp; vibration assessments</li>
+            <li>Baseline studies for new projects</li>
+          </ul>
+        </div>
+        <div class="pillar-card" id="service-iso" data-reveal>
+          <div class="pillar-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="9" r="6"/><path d="m9 14-2 8 5-3 5 3-2-8"/><path d="m9.5 9 1.8 1.8L14.5 7.5"/></svg></div>
+          <h3 class="pillar-name">ISO Certification Support</h3>
+          <p class="pillar-summary">From gap analysis to a passed certification audit — management systems thin enough to actually use.</p>
+          <ul class="pillar-capabilities">
+            <li>ISO 9001 quality management</li>
+            <li>ISO 14001 environmental management</li>
+            <li>ISO 45001 occupational health &amp; safety</li>
+            <li>Internal auditor training</li>
+          </ul>
+        </div>
+        <div class="pillar-card" id="service-training" data-reveal>
+          <div class="pillar-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m12 4 10 5-10 5L2 9l10-5Z"/><path d="M6 11.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-4.5"/><path d="M22 9v5"/></svg></div>
+          <h3 class="pillar-name">Safety Training &amp; Capacity Building</h3>
+          <p class="pillar-summary">Practical training that builds a safety culture your team owns — from inductions to committees.</p>
+          <ul class="pillar-capabilities">
+            <li>Statutory &amp; induction safety training</li>
+            <li>First aid &amp; fire safety training</li>
+            <li>Toolbox talks &amp; supervisor coaching</li>
+            <li>Safety committee facilitation</li>
+          </ul>
+        </div>
+        <div class="pillar-card" id="service-social" data-reveal>
+          <div class="pillar-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.2 3.4-5 6.5-5s5.7 1.8 6.5 5"/><path d="M16.5 3.6a3.5 3.5 0 0 1 0 8.8"/><path d="M18 15.2c2 .7 3.3 2.3 3.7 4.8"/></svg></div>
+          <h3 class="pillar-name">Social Impact &amp; Sustainability</h3>
+          <p class="pillar-summary">Stakeholder support, cultural sensitivity, and genuine community benefit — aligned with global goals.</p>
+          <ul class="pillar-capabilities">
+            <li>Stakeholder &amp; community engagement</li>
+            <li>Social impact management</li>
+            <li>Sustainability &amp; climate services</li>
+            <li>ESG reporting support</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="approach" aria-label="Our approach">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow" data-reveal>How We Work</p>
+        <h2 class="display-heading" data-reveal>From first walkthrough to a culture that holds.</h2>
+        <p class="lead" data-reveal>HSEQ fails when it's a binder on a shelf. Our five-step process is built to leave behind systems — and people — that keep working after the engagement ends.</p>
+      </div>
+      <div class="approach-steps">
+        <div class="step-card" data-reveal>
+          <div class="step-number">1</div>
+          <h3 class="step-title">Scope</h3>
+          <p class="step-desc">Understand your operations, legal obligations, and the risks that actually matter on your sites.</p>
+        </div>
+        <div class="step-card" data-reveal>
+          <div class="step-number">2</div>
+          <h3 class="step-title">Assess</h3>
+          <p class="step-desc">Audits, measurements, and monitoring with calibrated instruments and defensible methods.</p>
+        </div>
+        <div class="step-card" data-reveal>
+          <div class="step-number">3</div>
+          <h3 class="step-title">Implement</h3>
+          <p class="step-desc">Controls, procedures, and management systems designed for your workflows — not a template's.</p>
+        </div>
+        <div class="step-card" data-reveal>
+          <div class="step-number">4</div>
+          <h3 class="step-title">Train</h3>
+          <p class="step-desc">Hands-on training so supervisors and workers own the system, from toolbox talks to committees.</p>
+        </div>
+        <div class="step-card" data-reveal>
+          <div class="step-number">5</div>
+          <h3 class="step-title">Sustain</h3>
+          <p class="step-desc">Periodic monitoring, refresher audits, and reporting that keeps performance visible to management.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="featured-work" aria-label="Recent projects">
+    <!-- ILLUSTRATIVE ENTRIES: replace titles, clients, and dates with Ambex's
+         real completed projects before launch. Keep this list in sync with
+         work/index.html — these 4 cards are the featured subset of the 6
+         there. Card order matters: CSS hides the 4th card on desktop via
+         #featured-work .projects-grid .project-card:nth-child(4) and shows
+         it only on narrow/mobile screens. -->
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow" data-reveal>Recent Projects</p>
+        <h2 class="display-heading" data-reveal>Work we've delivered.</h2>
+        <p class="lead" data-reveal>A selection of completed engagements across manufacturing, energy, construction, and hospitality.</p>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card" data-category="Environment" data-reveal>
+          <div class="project-media"><div class="media-frame"><img class="js-img" data-path="/assets/images/projects/fuel-depot-esia.jpg" src="/assets/images/projects/fuel-depot-esia.jpg" alt="Fuel storage depot" loading="lazy"></div></div>
+          <div class="project-body">
+            <span class="project-tag">Environment</span>
+            <div class="project-title">ESIA for a Fuel Storage Depot</div>
+            <div class="project-meta">Jinja, Uganda — Completed 2024</div>
+            <p class="project-desc">Full environmental and social impact assessment through NEMA approval, including community consultation and a spill-response framework.</p>
+          </div>
+        </div>
+        <div class="project-card" data-category="Air Quality" data-reveal>
+          <div class="project-media"><div class="media-frame"><img class="js-img" data-path="/assets/images/projects/cement-air-baseline.jpg" src="/assets/images/projects/cement-air-baseline.jpg" alt="Cement plant stacks" loading="lazy"></div></div>
+          <div class="project-body">
+            <span class="project-tag">Air Quality</span>
+            <div class="project-title">Air Quality Baseline for a Cement Plant</div>
+            <div class="project-meta">Tororo, Uganda — Completed 2023</div>
+            <p class="project-desc">Twelve-month ambient monitoring programme covering PM2.5, PM10, SO₂, and NOx across eight receptor points around the plant.</p>
+          </div>
+        </div>
+        <div class="project-card" data-category="Safety" data-reveal>
+          <div class="project-media"><div class="media-frame"><img class="js-img" data-path="/assets/images/projects/beverage-ohs.jpg" src="/assets/images/projects/beverage-ohs.jpg" alt="Beverage production line" loading="lazy"></div></div>
+          <div class="project-body">
+            <span class="project-tag">Safety</span>
+            <div class="project-title">OHS Audit &amp; Training Programme</div>
+            <div class="project-meta">Kampala, Uganda — Completed 2024</div>
+            <p class="project-desc">Statutory OHS audit for a beverage manufacturer followed by a plant-wide training rollout for 400+ staff and a new permit-to-work system.</p>
+          </div>
+        </div>
+        <div class="project-card" data-category="Air Quality" data-reveal>
+          <div class="project-media"><div class="media-frame"><img class="js-img" data-path="/assets/images/projects/road-corridor-monitoring.jpg" src="/assets/images/projects/road-corridor-monitoring.jpg" alt="Road construction corridor" loading="lazy"></div></div>
+          <div class="project-body">
+            <span class="project-tag">Air Quality</span>
+            <div class="project-title">Noise &amp; Dust Monitoring, Road Corridor</div>
+            <div class="project-meta">Hoima, Uganda — Completed 2025</div>
+            <p class="project-desc">Construction-phase noise and dust compliance monitoring along a 40 km upgrade corridor, with monthly regulator reporting.</p>
+          </div>
+        </div>
+      </div>
+      <a class="btn btn-outline-dark" data-reveal href="/work">View All Projects</a>
+    </div>
+  </section>
+
+  <section class="section section-dark" id="testimonials" aria-label="What clients say">
+    <!-- PLACEHOLDER ATTRIBUTIONS: swap in real client quotes, names, and
+         roles (with permission) before launch. -->
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow" data-reveal>What Clients Say</p>
+        <h2 class="display-heading" data-reveal>Trusted on sites that can't afford mistakes.</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card" data-reveal>
+          <div class="testimonial-quote-mark" aria-hidden="true">&ldquo;</div>
+          <p class="testimonial-text">Ambex didn't hand us a report and disappear. They trained our supervisors, set up our safety committee, and six months later our incident rate tells the story.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-name">Plant Manager</div>
+            <div class="testimonial-role">Beverage manufacturer, Kampala</div>
+          </div>
+        </div>
+        <div class="testimonial-card" data-reveal>
+          <div class="testimonial-quote-mark" aria-hidden="true">&ldquo;</div>
+          <p class="testimonial-text">The ESIA process felt impossible until Ambex took it over. They handled NEMA, the district, and our host community — and we got our certificate on the first submission.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-name">Project Director</div>
+            <div class="testimonial-role">Energy sector client, Jinja</div>
+          </div>
+        </div>
+        <div class="testimonial-card" data-reveal>
+          <div class="testimonial-quote-mark" aria-hidden="true">&ldquo;</div>
+          <p class="testimonial-text">Their air quality data stood up to scrutiny from our international parent company's auditors without a single query. That's the standard we needed.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-name">HSE Coordinator</div>
+            <div class="testimonial-role">Cement producer, Tororo</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="clients" aria-label="Companies we have worked with">
+    <!-- PLACEHOLDER LOGOS: drop real client/partner logos in
+         assets/images/clients/ (see PUT_IMAGES_HERE.md) and update the alt
+         text with the company names. -->
+    <div class="container">
+      <div class="section-head section-head--center">
+        <p class="eyebrow" data-reveal>Our Clients</p>
+        <h2 class="display-heading" data-reveal>Companies we have worked with.</h2>
+        <p class="lead" data-reveal>Across oil and gas, construction, manufacturing, logistics, and development — organisations that trust us with their people and their compliance.</p>
+      </div>
+      <div class="clients-wall">
+        <div class="client-logo" data-reveal><div class="media-frame"><img class="js-img" data-path="/assets/images/clients/client-1.svg" src="/assets/images/clients/client-1.svg" alt="Client 1" loading="lazy"></div></div>
+        <div class="client-logo" data-reveal><div class="media-frame"><img class="js-img" data-path="/assets/images/clients/client-2.svg" src="/assets/images/clients/client-2.svg" alt="Client 2" loading="lazy"></div></div>
+        <div class="client-logo" data-reveal><div class="media-frame"><img class="js-img" data-path="/assets/images/clients/client-3.svg" src="/assets/images/clients/client-3.svg" alt="Client 3" loading="lazy"></div></div>
+        <div class="client-logo" data-reveal><div class="media-frame"><img class="js-img" data-path="/assets/images/clients/client-4.svg" src="/assets/images/clients/client-4.svg" alt="Client 4" loading="lazy"></div></div>
+        <div class="client-logo" data-reveal><div class="media-frame"><img class="js-img" data-path="/assets/images/clients/client-5.svg" src="/assets/images/clients/client-5.svg" alt="Client 5" loading="lazy"></div></div>
+        <div class="client-logo" data-reveal><div class="media-frame"><img class="js-img" data-path="/assets/images/clients/client-6.svg" src="/assets/images/clients/client-6.svg" alt="Client 6" loading="lazy"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="sectors" aria-label="Sectors we serve">
+    <div class="container">
+      <div class="section-head section-head--center">
+        <p class="eyebrow" data-reveal>Where We Work</p>
+        <h2 class="display-heading" data-reveal>Sectors we serve.</h2>
+        <p class="lead" data-reveal>From factory floors to field camps, we adapt the same rigorous approach to each sector's specific risks and regulations.</p>
+      </div>
+      <div class="sectors-wall" data-reveal>
+        <span class="sector-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 20h20M4 20V9l6 4V9l6 4V6h4v14"/></svg>Manufacturing</span>
+        <span class="sector-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v8m-4 12h8M8 6l4 4 4-4M6 22V12h12v10"/></svg>Oil &amp; Gas</span>
+        <span class="sector-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg>Construction</span>
+        <span class="sector-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="9"/></svg>Energy &amp; Utilities</span>
+        <span class="sector-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20c4-8 12-8 16 0M12 4v4m0 0c-2 0-4 2-4 4m4-4c2 0 4 2 4 4"/></svg>Agriculture</span>
+        <span class="sector-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21h18M6 21V5h12v16M10 9h4m-4 4h4"/></svg>Hospitality</span>
+        <span class="sector-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 21V8l6-4v17M3 21h18M3 21V12l6-4"/></svg>Mining &amp; Quarrying</span>
+        <span class="sector-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M8 6h13v11H8zM3 17V9h5m0 8H3m5 0v4m8-4v4"/></svg>Logistics &amp; Transport</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band" aria-label="Get started">
+    <div class="container cta-band-inner">
+      <div>
+        <h2 data-reveal>Ready to make your workplace safer?</h2>
+        <p class="lead" data-reveal>Tell us about your site and we'll recommend where to start — an audit, a monitoring plan, or a training programme.</p>
+      </div>
+      <a href="/contact" class="btn btn-accent" data-reveal>Get in Touch</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">
+          <img src="/logo.svg" alt="" width="34" height="34">
+          <span>Ambex Consults</span>
+        </div>
+        <p class="footer-note">Ambex Consults — your trusted HSE partner for health, safety, environment, and air quality across East Africa.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/work">Projects</a></li>
+            <li><a href="/people">Team</a></li>
+            <li><a href="/insights">Insights</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:info@ambexconsults.com">info@ambexconsults.com</a></li>
+            <li>+256 787 191 860</li>
+            <li>North Park Plaza, Namugongo Mbalwa,<br>Bypass Link, Kampala</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="footer-year">2026</span> Ambex Consults (U) Ltd. All rights reserved.</span>
+      <span>Kampala, Uganda — serving East Africa</span>
+    </div>
+  </div>
+</footer>
+</div>
+<div class="mobile-nav-drawer" id="mobile-nav-drawer">
+  <a href="/" class="mobile-nav-brand" aria-label="Ambex Consults home">
+    <img src="/logo.svg" alt="" class="brand-mark">
+    <span class="brand-name">Ambex<small class="brand-name-sub">Consults</small></span>
+  </a>
+  <ul>
+    <li><a href="/" aria-current="page">Home</a></li>
+    <li><a href="/work">Projects</a></li>
+    <li><a href="/people">Team</a></li>
+    <li><a href="/insights">Insights</a></li>
+    <li><a href="/contact">Contact</a></li>
+  </ul>
+  <button type="button" class="mobile-nav-close" aria-label="Close menu">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6 6 18"/></svg>
+  </button>
+</div>
+
+<noscript>
+  <div style="padding:2rem;font-family:sans-serif;max-width:640px;margin:0 auto;">
+    This page works without JavaScript. Enabling it adds dark mode, the mobile menu, and a few animations — or contact
+    info@ambexconsults.com directly.
+  </div>
+</noscript>
+
+<script src="/js/main.js?v=1" defer></script>
+</body>
+</html>

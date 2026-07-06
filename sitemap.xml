@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Update the domain if the site is hosted somewhere other than ambexconsults.com,
+     and add a <url> entry for each new article you publish. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://ambexconsults.com/</loc></url>
+  <url><loc>https://ambexconsults.com/work</loc></url>
+  <url><loc>https://ambexconsults.com/people</loc></url>
+  <url><loc>https://ambexconsults.com/insights</loc></url>
+  <url><loc>https://ambexconsults.com/insights/osh-act-site-inductions/</loc></url>
+  <url><loc>https://ambexconsults.com/insights/air-quality-monitoring-101/</loc></url>
+  <url><loc>https://ambexconsults.com/insights/iso-14001-without-the-paperwork-mountain/</loc></url>
+  <url><loc>https://ambexconsults.com/contact</loc></url>
+</urlset>

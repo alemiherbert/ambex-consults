@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+(function () {
+  var stored = localStorage.getItem('theme');
+  var theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  if (theme === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+})();
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Ambex Consults</title>
+<meta name="description" content="Completed HSEQ projects by Ambex Consults: environmental assessments, air quality monitoring programmes, safety audits, and training rollouts across Uganda.">
+<meta property="og:title" content="Projects — Ambex Consults">
+<meta property="og:description" content="Completed HSEQ work across manufacturing, energy, construction, and hospitality.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="/assets/images/hero/safety.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Projects — Ambex Consults">
+<meta name="twitter:description" content="Completed HSEQ work across manufacturing, energy, construction, and hospitality.">
+<meta name="twitter:image" content="/assets/images/hero/safety.webp">
+<meta name="theme-color" content="#0E8A60">
+<link rel="icon" href="/logo.svg" type="image/svg+xml">
+<link rel="canonical" href="https://ambexconsults.com/work">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css?v=1">
+</head>
+<body data-page="work">
+<div id="page-shell">
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<header class="site-header is-scrolled" id="site-header">
+  <div class="container header-inner">
+    <a href="/" class="brand" aria-label="Ambex Consults home">
+      <img src="/logo.svg" alt="" class="brand-mark" width="36" height="36">
+      <span class="brand-name">Ambex<span class="brand-name-sub">Consults</span></span>
+    </a>
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/work" aria-current="page">Projects</a></li>
+        <li><a href="/people">Team</a></li>
+        <li><a href="/insights">Insights</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <a href="/contact" class="btn btn-accent nav-cta">Talk to Us</a>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4 12H2M22 12h-2M5 5l1.5 1.5M17.5 17.5 19 19M5 19l1.5-1.5M17.5 6.5 19 5"/></svg>
+      </button>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main-content">
+  <section class="section" id="projects" aria-label="Our projects">
+    <!-- ILLUSTRATIVE ENTRIES: replace titles, clients, dates, and outcomes
+         with Ambex's real completed projects before launch. The 4 featured
+         cards on the home page are hand-duplicated from this list. -->
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow" data-reveal>Our Projects</p>
+        <h2 class="display-heading" data-reveal>Delivered, not promised.</h2>
+        <p class="lead" data-reveal>Completed engagements across environmental compliance, air quality monitoring, workplace safety, and training.</p>
+      </div>
+      <div class="filters">
+        <button type="button" class="filter-btn is-active" data-filter="All">All</button>
+        <button type="button" class="filter-btn" data-filter="Safety">Safety</button>
+        <button type="button" class="filter-btn" data-filter="Environment">Environment</button>
+        <button type="button" class="filter-btn" data-filter="Air Quality">Air Quality</button>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card" data-category="Environment" data-reveal>
+          <div class="project-media"><div class="media-frame"><img class="js-img" data-path="/assets/images/projects/fuel-depot-esia.jpg" src="/assets/images/projects/fuel-depot-esia.jpg" alt="Fuel storage depot" loading="lazy"></div></div>
+          <div class="project-body">
+            <span class="project-tag">Environment</span>
+            <div class="project-title">ESIA for a Fuel Storage Depot</div>
+            <div class="project-meta">Jinja, Uganda — Completed 2024</div>
+            <p class="project-desc">Full environmental and social impact assessment through NEMA approval, including community consultation and a spill-response framework.</p>
+          </div>
+        </div>
+        <div class="project-card" data-category="Air Quality" data-reveal>
+          <div class="project-media"><div class="media-frame"><img class="js-img" data-path="/assets/images/projects/cement-air-baseline.jpg" src="/assets/images/projects/cement-air-baseline.jpg" alt="Cement plant stacks" loading="lazy"></div></div>
+          <div class="project-body">
+            <span class="project-tag">Air Quality</span>
+            <div class="project-title">Air Quality Baseline for a Cement Plant</div>
+            <div class="project-meta">Tororo, Uganda — Completed 2023</div>
+            <p class="project-desc">Twelve-month ambient monitoring programme covering PM2.5, PM10, SO₂, and NOx across eight receptor points around the plant.</p>
+          </div>
+        </div>
+        <div class="project-card" data-category="Safety" data-reveal>
+          <div class="project-media"><div class="media-frame"><img class="js-img" data-path="/assets/images/projects/beverage-ohs.jpg" src="/assets/images/projects/beverage-ohs.jpg" alt="Beverage production line" loading="lazy"></div></div>
+          <div class="project-body">
+            <span class="project-tag">Safety</span>
+            <div class="project-title">OHS Audit &amp; Training Programme</div>
+            <div class="project-meta">Kampala, Uganda — Completed 2024</div>
+            <p class="project-desc">Statutory OHS audit for a beverage manufacturer followed by a plant-wide training rollout for 400+ staff and a new permit-to-work system.</p>
+          </div>
+        </div>
+        <div class="project-card" data-category="Air Quality" data-reveal>
+          <div class="project-media"><div class="media-frame"><img class="js-img" data-path="/assets/images/projects/road-corridor-monitoring.jpg" src="/assets/images/projects/road-corridor-monitoring.jpg" alt="Road construction corridor" loading="lazy"></div></div>
+          <div class="project-body">
+            <span class="project-tag">Air Quality</span>
+            <div class="project-title">Noise &amp; Dust Monitoring, Road Corridor</div>
+            <div class="project-meta">Hoima, Uganda — Completed 2025</div>
+            <p class="project-desc">Construction-phase noise and dust compliance monitoring along a 40 km upgrade corridor, with monthly regulator reporting.</p>
+          </div>
+        </div>
+        <div class="project-card" data-category="Environment" data-reveal>
+          <div class="project-media"><div class="media-frame"><img class="js-img" data-path="/assets/images/projects/logistics-iso14001.jpg" src="/assets/images/projects/logistics-iso14001.jpg" alt="Logistics warehouse and fleet" loading="lazy"></div></div>
+          <div class="project-body">
+            <span class="project-tag">Environment</span>
+            <div class="project-title">ISO 14001 Readiness for a Logistics Firm</div>
+            <div class="project-meta">Mukono, Uganda — Completed 2025</div>
+            <p class="project-desc">Gap analysis, environmental management system build-out, and internal auditor training ahead of a successful certification audit.</p>
+          </div>
+        </div>
+        <div class="project-card" data-category="Safety" data-reveal>
+          <div class="project-media"><div class="media-frame"><img class="js-img" data-path="/assets/images/projects/hotel-fire-safety.jpg" src="/assets/images/projects/hotel-fire-safety.jpg" alt="Hotel building exterior" loading="lazy"></div></div>
+          <div class="project-body">
+            <span class="project-tag">Safety</span>
+            <div class="project-title">Fire Safety Risk Assessment, Hotel Group</div>
+            <div class="project-meta">Entebbe, Uganda — Completed 2024</div>
+            <p class="project-desc">Fire risk assessments and evacuation planning across three properties, plus warden training and quarterly drill facilitation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">
+          <img src="/logo.svg" alt="" width="34" height="34">
+          <span>Ambex Consults</span>
+        </div>
+        <p class="footer-note">Ambex Consults — your trusted HSE partner for health, safety, environment, and air quality across East Africa.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/work">Projects</a></li>
+            <li><a href="/people">Team</a></li>
+            <li><a href="/insights">Insights</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:info@ambexconsults.com">info@ambexconsults.com</a></li>
+            <li>+256 787 191 860</li>
+            <li>North Park Plaza, Namugongo Mbalwa,<br>Bypass Link, Kampala</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="footer-year">2026</span> Ambex Consults (U) Ltd. All rights reserved.</span>
+      <span>Kampala, Uganda — serving East Africa</span>
+    </div>
+  </div>
+</footer>
+</div>
+<div class="mobile-nav-drawer" id="mobile-nav-drawer">
+  <a href="/" class="mobile-nav-brand" aria-label="Ambex Consults home">
+    <img src="/logo.svg" alt="" class="brand-mark">
+    <span class="brand-name">Ambex<small class="brand-name-sub">Consults</small></span>
+  </a>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/work" aria-current="page">Projects</a></li>
+    <li><a href="/people">Team</a></li>
+    <li><a href="/insights">Insights</a></li>
+    <li><a href="/contact">Contact</a></li>
+  </ul>
+  <button type="button" class="mobile-nav-close" aria-label="Close menu">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6 6 18"/></svg>
+  </button>
+</div>
+
+<noscript>
+  <div style="padding:2rem;font-family:sans-serif;max-width:640px;margin:0 auto;">
+    This page works without JavaScript. Enabling it adds dark mode, the mobile menu, and a few animations — or contact
+    info@ambexconsults.com directly.
+  </div>
+</noscript>
+
+<script src="/js/main.js?v=1" defer></script>
+</body>
+</html>
