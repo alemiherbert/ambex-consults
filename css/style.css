@@ -230,7 +230,7 @@ h2.display, .display-heading {
 }
 .brand-name-sub {
   font-weight: 400;
-  font-size: 0.64rem;
+  font-size: 0.64rem !important;
   letter-spacing: 0.2em !important;
   text-transform: uppercase;
   opacity: 0.72;
