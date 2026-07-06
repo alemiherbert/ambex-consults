@@ -565,6 +565,8 @@ html[data-theme="dark"] .stats-bar { background: #0B6B4B; }
   gap: clamp(1.25rem, 2.5vw, 1.75rem);
 }
 .pillar-card {
+  position: relative;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   background: var(--paper);
@@ -574,14 +576,27 @@ html[data-theme="dark"] .stats-bar { background: #0B6B4B; }
 }
 .pillar-card:hover { transform: translateY(-4px); box-shadow: 0 4px 10px rgba(29, 26, 18, 0.08), 0 18px 40px rgba(29, 26, 18, 0.12); }
 .pillar-icon {
-  width: 48px; height: 48px;
-  display: flex; align-items: center; justify-content: center;
-  background: var(--green-deep);
-  color: #fff;
+  position: absolute;
+  right: 0.4rem;
+  bottom: 0.4rem;
+  z-index: 0;
+  width: 10.5rem;
+  height: 10.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(14, 138, 96, 0.16);
+  pointer-events: none;
 }
-.pillar-card:nth-child(3n+2) .pillar-icon { background: var(--blue); }
-.pillar-card:nth-child(3n) .pillar-icon { background: var(--brown); }
-.pillar-icon svg { width: 24px; height: 24px; }
+.pillar-card:nth-child(3n+2) .pillar-icon { color: rgba(25, 120, 180, 0.16); }
+.pillar-card:nth-child(3n) .pillar-icon { color: rgba(141, 92, 50, 0.16); }
+.pillar-icon svg { width: 5.625rem; height: 5.625rem; }
+.pillar-name,
+.pillar-summary,
+.pillar-capabilities {
+  position: relative;
+  z-index: 1;
+}
 .pillar-name {
   margin-top: 1.2rem;
   font-family: var(--font-heading);
