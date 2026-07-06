@@ -224,14 +224,14 @@ h2.display, .display-heading {
 .brand-name-main {
   font-size: inherit;
   font-weight: inherit;
-  letter-spacing: inherit;
+  letter-spacing: -0.025rem !important;
   line-height: inherit;
   text-transform: uppercase;
 }
 .brand-name-sub {
   font-weight: 400;
   font-size: 0.64rem;
-  letter-spacing: 0.245em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   opacity: 0.72;
 }
