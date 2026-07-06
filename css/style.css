@@ -822,15 +822,22 @@ html[data-theme="dark"] .stats-bar { background: #0B6B4B; }
   padding: 1.9rem 1.7rem;
   display: flex;
   flex-direction: column;
+  position: relative;
+  overflow: hidden;
 }
 .testimonial-quote-mark {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.9rem;
   font-family: var(--font-display);
-  font-size: 3rem;
-  line-height: 0.6;
+  font-size: 10rem;
+  line-height: 0.8;
   color: var(--green);
+  opacity: 0.2;
+  pointer-events: none;
 }
 .testimonial-card:nth-child(2) .testimonial-quote-mark { color: var(--blue); }
-.testimonial-text { margin-top: 1rem; font-size: 0.96rem; color: var(--dark-text); flex: 1; }
+.testimonial-text { margin-top: 2.4rem; font-size: 0.96rem; color: var(--dark-text); flex: 1; }
 .testimonial-author { margin-top: 1.4rem; }
 .testimonial-name { font-family: var(--font-heading); font-weight: 700; font-size: 1rem; }
 .testimonial-role { margin-top: 0.15rem; font-size: 0.8rem; color: var(--dark-text-soft); }
