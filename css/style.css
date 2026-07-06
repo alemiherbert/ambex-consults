@@ -393,6 +393,9 @@ body:not([data-page="home"]) #main-content { padding-top: 24px; }
   position: absolute; inset: 0;
   background: linear-gradient(180deg, rgba(8, 20, 14, 0.5) 0%, rgba(8, 20, 14, 0.42) 45%, rgba(8, 20, 14, 0.85) 100%);
 }
+.hero-media .media-frame img {
+  object-position: right center;
+}
 .hero-bottom {
   position: relative; z-index: 1;
   width: 100%;
