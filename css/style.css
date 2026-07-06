@@ -221,10 +221,17 @@ h2.display, .display-heading {
   text-transform: uppercase;
   display: flex; flex-direction: column;
 }
+.brand-name-main {
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  text-transform: uppercase;
+}
 .brand-name-sub {
   font-weight: 400;
   font-size: 0.64rem;
-  letter-spacing: 0.34em;
+  letter-spacing: 0.245em;
   text-transform: uppercase;
   opacity: 0.72;
 }
@@ -505,6 +512,8 @@ html[data-theme="dark"] .stats-bar { background: #0B6B4B; }
   gap: 1.5rem;
 }
 .value-card {
+  position: relative;
+  overflow: hidden;
   background: var(--paper-alt);
   padding: 2.1rem 1.8rem;
   border-top: 6px solid var(--green);
@@ -514,14 +523,25 @@ html[data-theme="dark"] .stats-bar { background: #0B6B4B; }
 .value-card--brown { border-top-color: var(--brown); }
 .value-card:hover { transform: translateY(-4px); box-shadow: var(--card-shadow); }
 .value-card .value-letter {
+  position: absolute;
+  top: 0.4rem;
+  right: 0.5rem;
+  z-index: 0;
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: 2.8rem;
+  font-size: 14rem;
   line-height: 0.9;
   color: var(--green);
+  opacity: 0.16;
+  pointer-events: none;
 }
 .value-card--blue .value-letter { color: var(--blue); }
 .value-card--brown .value-letter { color: var(--brown); }
+.value-title,
+.value-desc {
+  position: relative;
+  z-index: 1;
+}
 .value-title {
   font-family: var(--font-heading);
   font-weight: 700;
